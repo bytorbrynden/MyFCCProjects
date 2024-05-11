@@ -1,0 +1,80 @@
+:root {
+    /* Color palette courtesy of Color Hunt: https://colorhunt.co/palette/0306373c0753720455910a67 */
+    --backgroundColor: #030637;
+    --foregroundColor1: #910A67;
+    --foregroundColor2: #720455;
+    --foregroundColor3: #3C0753;
+
+    --themeFont: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--backgroundColor);
+    color: var(--foregroundColor1);
+
+    font-family: var(--themeFont);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 5px;
+
+    width: 60%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heading #title, .heading #description {
+    text-align: center;
+    margin: 0.5em;
+}
+
+#survey-form {
+    margin: 0 auto;
+    width: 60%;
+}
+
+fieldset {
+    border: none;
+
+    border-bottom: 1px solid var(--foregroundColor3);
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, select, textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+
+    background-color: var(--backgroundColor);
+    color: white;
+
+    border: 1px solid var(--foregroundColor2);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+
+    font-family: var(--themeFont);
+}
+
+textarea {
+    font-size: 12px;
+}
+
+input.inline {
+    width: unset;
+    min-height: unset;
+}

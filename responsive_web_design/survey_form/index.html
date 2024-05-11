@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Survey Form</title>
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h1 id="title">Car Form</h1>
+                <p id="description">Have a muscle car? Tell us a little bit about it!</p>
+            </div>
+            <form id="survey-form" method="POST" action="">
+                <fieldset>
+                    <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+                    <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+                    <label id="number-label" for="number">Age <input id="number" type="number" min="13" max="120" placeholder="Enter your age" required></label>
+                </fieldset>
+                <fieldset>
+                    <label for="dropdown">Car
+                        <select name="car" id="dropdown">
+                            <option value="">Select...</option>
+                            <option value="camaro">Chevrolet Camaro</option>
+                            <option value="mustang">Ford Mustang</option>
+                            <option value="charger">Dodge Charger</option>
+                            <option value="challenger">Dodge Challenger</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <figcaption>Engine</figcaption>
+                    <label for="v6Engine"><input type="radio" id="v6Engine" name="engine-type" value="v6" class="inline" checked> V6</label>
+                    <label for="v8Engine"><input type="radio" id="v8Engine" name="engine-type" value="v8" class="inline"> V8</label>
+                </fieldset>
+                <fieldset>
+                    <figcaption>Transmission</figcaption>
+                    <label for="automaticTransmission"><input type="radio" id="automaticTransmission" name="transmission-type" value="automatic" class="inline" checked> Automatic</label>
+                    <label for="manualTransmission"><input type="radio" id="manualTransmission" name="transmission-type" value="manual" class="inline"> Manual</label>
+                </fieldset>
+                <fieldset>
+                    <figcaption>Options</figcaption>
+                    <label for="sunroof"><input id="sunroof" type="checkbox" name="sunroof-option" value="true" class="inline"> Sunroof</label>
+                    <label for="wheels"><input id="wheels" type="checkbox" name="alloy-wheels" value="true" class="inline"> Aluminum Wheels</label>
+                    <label for="leather"><input id="leather" type="checkbox" name="leather-interior" value="true" class="inline"> Leather Interior</label>
+                </fieldset>
+                <fieldset>
+                    <figcaption>Aftermarket Modifications</figcaption>
+                    <label for="aftermarketModifications"><textarea id="aftermarketModifications" name="aftermarket-mods" placeholder="List your aftermarket modifcations here (if any)..." rows="3" cols="30"></textarea></label>
+                </fieldset>
+                <input id="submit" type="submit" value="Submit Survey">
+            </form>
+        </div>
+    </body>
+</html>
