@@ -32,11 +32,13 @@ body {
     margin: 0 auto;
     padding: 2rem 0;
 
-    width: 60%;
+    width: 40%;
     /*height: calc(100% - 10px);*/ /* Set height to 100% of parent, minus 10px to account for the padding we added. */
 
     /* background-color: rgba(255, 255, 255, 0.35); */
     background-color: var(--backgroundColorTrans);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 .heading #title, .heading #description {
