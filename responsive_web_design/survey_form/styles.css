@@ -30,10 +30,10 @@ body {
 
 .container {
     margin: 0 auto;
-    padding: 5px;
+    padding: 2rem 0;
 
     width: 60%;
-    height: calc(100% - 10px); /* Set height to 100% of parent, minus 10px to account for the padding we added. */
+    /*height: calc(100% - 10px);*/ /* Set height to 100% of parent, minus 10px to account for the padding we added. */
 
     /* background-color: rgba(255, 255, 255, 0.35); */
     background-color: var(--backgroundColorTrans);
