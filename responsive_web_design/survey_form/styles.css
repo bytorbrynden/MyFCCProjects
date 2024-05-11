@@ -1,7 +1,9 @@
 :root {
     /* Color palette courtesy of Color Hunt: https://colorhunt.co/palette/0306373c0753720455910a67 */
     --backgroundColor: #030637;
-    --foregroundColor1: #910A67;
+    --backgroundColorTrans: #03063785;
+    /* --foregroundColor1: #910A67; */
+    --foregroundColor1: white;
     --foregroundColor2: #720455;
     --foregroundColor3: #3C0753;
 
@@ -12,7 +14,12 @@ body {
     margin: 0;
     padding: 0;
 
-    background-color: var(--backgroundColor);
+    /* background-color: var(--backgroundColor); */
+    /* background-image: url("pexels-pixabay-290470.jpg"); */
+    background-image: url("camaro_cota1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
     color: var(--foregroundColor1);
 
     font-family: var(--themeFont);
@@ -26,8 +33,10 @@ body {
     padding: 5px;
 
     width: 60%;
+    height: calc(100% - 10px); /* Set height to 100% of parent, minus 10px to account for the padding we added. */
 
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.35); */
+    background-color: var(--backgroundColorTrans);
 }
 
 .heading #title, .heading #description {
