@@ -1,0 +1,117 @@
+:root {
+    /* Colors palette pulled from https://www.rush.com/ */
+    --rushLightGrey: #1B1B1B;
+    --rushDarkGrey: #0A0B0A;
+    --rushRed: #F20F2B;
+    --rushYellow: #D4B11C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(var(--rushLightGrey), var(--rushDarkGrey));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #FFF;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--rushYellow);
+}
+
+#main {
+    width: 90%;
+    min-width: 400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    /* border: 0.5px solid var(--rushYellow); */
+    /* border-radius: 12px; */
+}
+
+.strong {
+    font-weight: 800;
+    color: var(--rushRed);
+}
+
+.small-text {
+    font-size: 0.7rem;
+}
+
+#header {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#header #title {
+    margin: 0;
+    color: var(--rushRed);
+    font-weight: 800;
+}
+
+#header #subtitle {
+    font-style: italic;
+}
+
+#img-div {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+#img-div > img {
+    display: block;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+#tribute-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#main > p {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#albums, #tours {
+    flex-basis: 25%;
+    border: 1px solid white;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+ul {
+    padding: 0 10px;
+}
+
+ul > li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+    border-bottom: 1px dashed var(--rushLightGrey);
+    text-align: left;
+}
+
+ul > li:last-of-type {
+    border: none;
+}
+
+ul > li:hover {
+    background-color: var(--rushDarkGrey);
+    color: var(--rushYellow);
+}
