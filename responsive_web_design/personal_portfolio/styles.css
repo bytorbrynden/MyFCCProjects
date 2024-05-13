@@ -1,0 +1,157 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    margin: 0;
+    padding: 0;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+
+    background-color: lightgrey;
+}
+
+#navbar .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 2rem;
+
+    margin: 0;
+    font-size: 2.0rem;
+}
+
+#navbar .nav-links .nav-item {
+    display: inline-block;
+    padding: 1.5rem;
+}
+
+#navbar .nav-links .nav-item .nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 1.2rem;
+}
+
+section.full-height {
+    min-height: 100%;
+}
+
+section .section-title {
+    font-size: 4.0rem;
+    margin: 0 0 1.0em 0;
+    text-align: center;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-color: grey;
+    text-align: center;
+}
+
+.welcome-title {
+    font-size: 3.2rem;
+    margin: 0;
+}
+.welcome-tagline {
+    font-size: 2.2rem;
+    font-style: italic;
+}
+.welcome-tagline::before {
+    content: "\"";
+}
+.welcome-tagline::after {
+    content: "\"";
+}
+
+@media only screen and (max-width: 768px) {
+    .projects-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .projects-container {
+        width: 60%;
+    }
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    margin: 0 auto;
+}
+
+.project-tile {
+    padding: 1.2em;
+}
+
+.project-tile .preview {
+    object-fit: fill;
+    width: 100%;
+}
+
+.project-tile .name {
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.project-tile .description {
+    font-size: 1.3rem;
+}
+
+.project-tile .actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projects-footer {
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+#contact-section {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact-section h2, #contact-section p {
+    font-size: 1.8rem;
+}
+
+#contact-section .links {
+    display: flex;
+    justify-content: center;
+    gap: 3.0rem;
+    font-size: 1.5rem;
+}
+
+#contact-section ul li {
+    display: inline-block;
+}
