@@ -1,0 +1,1 @@
+### Contains projects from [freeCodeCamp's JavaScript Algorithms and Data Structures course](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/).
