@@ -1,0 +1,83 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+:root {
+    --backgroundColor: #C29979;
+    --foregroundColor: #C33149;
+    --outlineColor: #C33149;
+    --goodColor: #C9D996;
+    --badColor: #A22522;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Oswald", sans-serif;
+
+    background-color: var(--backgroundColor);
+    color: var(--foregroundColor);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    .outer-wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .outer-wrapper {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+.outer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.inner-wrapper * {
+    margin: 1.0rem auto;
+}
+
+#text-input {
+    border: 1px solid var(--outlineColor);
+    border-radius: 12px;
+    padding: 1em;
+    min-width: 240px;
+}
+
+#result {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.good {
+    color: var(--goodColor);
+}
+
+.bad {
+    color: var(--badColor);
+}
