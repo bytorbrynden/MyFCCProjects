@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #1b1b32;
+    --orange: #f1be32;
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: var(--light-grey);
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 20px 0;
+}
+
+.converter-wrapper .converter-input,
+.converter-wrapper .converter-output {
+    padding: 25px;
+}
+
+.converter-input,
+.converter-output {
+    text-align: center;
+    border: 1px solid var(--light-grey);
+
+    margin-top: 1em;
+}
+
+.converter-input input, .converter-input button {
+    padding: 5px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.converter-output.hidden {
+    display: none;
+}
+
+.converter-output.error {
+    border: 2px solid red;
+    color: red;
+}
