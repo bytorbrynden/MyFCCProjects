@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #1b1b32;
+    --orange: #f1be32;
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: var(--light-grey);
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-wrapper {
+    width: 30%;
+    margin: 1.2rem 0;
+    /* margin-bottom: 1.2rem; */
+}
+
+#input-wrapper input {
+    width: 100%;
+    padding: 1rem;
+}
+
+#controls-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 30%;
+}
+
+#controls-wrapper button {
+    width: 25%;
+    padding: 0.3rem;
+}
+
+#results-div {
+    margin: 1.2rem 0;
+}
+
+#results-div .valid {
+    color: green;
+}
+
+#results-div .invalid {
+    color: red;
+}
